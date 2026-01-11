@@ -1,0 +1,26 @@
+<svg width="200" height="24" viewBox="0 0 200 24" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7b3fe4"/>
+      <stop offset="100%" stop-color="#ff8a3d"/>
+    </linearGradient>
+  </defs>
+
+  <path
+    fill="none"
+    stroke="url(#grad)"
+    stroke-width="4"
+    stroke-linecap="round"
+  >
+    <animate
+      attributeName="d"
+      dur="3s"
+      repeatCount="indefinite"
+      values="
+        M0 12 Q 25 2 50 12 T 100 12 T 150 12 T 200 12;
+        M0 12 Q 25 22 50 12 T 100 12 T 150 12 T 200 12;
+        M0 12 Q 25 2 50 12 T 100 12 T 150 12 T 200 12
+      "
+    />
+  </path>
+</svg>
