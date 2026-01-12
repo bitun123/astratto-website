@@ -8,7 +8,7 @@ function Hero() {
   return (
     <div>
       <section className="full p-[1rem]">
-        <div className=" mx-auto grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr]   items-center justify-between gap-1 ">
+        <div className="flex items-center justify-between gap-1 ">
           <div
             className="
     absolute
@@ -23,7 +23,7 @@ function Hero() {
 
     lg:static
     lg:w-[27rem] lg:h-[27rem]
-    lg:pl-24 lg:pt-2
+
     lg:flex lg:flex-col
     lg:justify-between
   
@@ -34,8 +34,7 @@ function Hero() {
               src={image1}
               alt="Decorative illustration"
               className="w-full h-full object-cover
-                lg:translate-x-33
-                 lg:translate-y-5
+           
               
               "
             />
@@ -44,8 +43,6 @@ function Hero() {
               alt=""
               className="   lg:translate-y-12
             lg:-rotate-15
-            lg:pl-4
-            
             
             "
             />
@@ -60,7 +57,6 @@ function Hero() {
               lg:-rotate-7
               lg:flex
               items-center
-              
               "
               >
                 <span
@@ -120,25 +116,15 @@ function Hero() {
           </div>
 
           <div className="bg-amber-600 flex flex-col justify-between h-full">
-<div>
-  <h1>
-    Via della createvitta
-  </h1>
-  <h1>
-   20212 milano
-  </h1>
-</div>
-<div>
-  <h1>
-    Via della createvitta
-  </h1>
-  <h1>
-   20212 milano
-  </h1>
-</div>
-
-<div></div>
-
+            <div>
+              <h1>Via della createvitta</h1>
+              <h1>20212 milano</h1>
+            </div>
+            <div>
+              <h1>Via della createvitta</h1>
+              <h1>20212 milano</h1>
+            </div>
+            <div></div>
           </div>
         </div>
       </section>
