@@ -10,6 +10,8 @@ import image7 from "../../assets/image/image7.png";
 import arrowPic from "../../assets/image/svg4.png";
 import CardSlider from "../Card/CardSlider";
 import { ArrowUpRight } from "lucide-react";
+import RecentProjects from "../section/RecentProjects";
+import ImageTrail from "../imagetrail/ImageTrail";
 
 function Hero() {
   return (
@@ -104,6 +106,7 @@ function Hero() {
         </div>
       </section>
       <section className="p-[1.1rem]">
+
         <div className="w-full min-h-fit border-gray-400 border-2 rounded-xl flex flex-col">
           <div className="w-full flex justify-between items-center p-1 lg:p-5 ">
             <h1 className="text-3xl lg:text-5xl font-medium ">Our Service</h1>
@@ -119,27 +122,32 @@ function Hero() {
           <div className="p-1 w-full flex items-center justify-center">
             <CardSlider />
           </div>
+                  <ImageTrail images={[image1, image7, logo1, logo3]}>
           <div className=" w-[100%]  flex  text-center justify-center relative mt-5 lg:mt-15">
-            <img src={arrowPic}alt="" className="w-17 h-17 object-cover absolute left-0 -top-1 lg:-top-5 lg:w-40 lg:h-40 lg:left-65" />
+            <img
+              src={arrowPic}
+              alt=""
+              className="w-17 h-17 object-cover absolute left-0 -top-5 lg:-top-5 lg:w-40 lg:h-40 lg:left-65"
+            />
             <h1 className="text-[1.2rem] lg:text-[3rem] lg:leading-16">
-              <span className="text-sm text-gray-400 lg:text-xl" >- About Astratto</span>
-               <br />
+              <span className="text-sm text-gray-400 lg:text-xl">
+                - About Astratto
+              </span>
+              <br />
               Our <span className="text-gray-400">visionary</span>
               <span className="text-orange-300"> artisans </span>
-              <span > collaborate</span>
+              <span> collaborate</span>
               <br />
               <span className="flex  inline-block items-center">
-              <span className="text-purple-600">seamlessly </span> to craft
-       
+                <span className="text-purple-600">seamlessly </span> to craft
                 {/* Center Logo */}
                 <img
                   src={logo1}
                   alt="logo"
                   className="w-13 h-10  object-cover inline-block lg:w-25 lg:h-25 "
                 />
-
-              <span>inspiring </span>
-              <span className="text-gray-400">experieces,</span>
+                <span>inspiring </span>
+                <span className="text-gray-400">experieces,</span>
               </span>
               <br />
               <span className="text-orange-300">leaving &nbsp;</span>
@@ -149,24 +157,27 @@ function Hero() {
               <span className="text-purple-600">brands</span>
               <br />
               <span className="flex  inline-block items-center pb-2">
-
-           
-              <span>and &nbsp;</span> 
-              <span className=" bg-yellow-200 text-purple-700 px-3  leading-none rounded-xl  ">spaces</span>       <img
+                <span>and &nbsp;</span>
+                <span className=" bg-yellow-200 text-purple-700 px-3  leading-none rounded-xl  ">
+                  spaces
+                </span>{" "}
+                <img
                   src={logo3}
                   alt="logo"
                   className="w-13 h-10  object-cover inline-block lg:w-25 lg:h-25"
                 />
-                 </span>
+              </span>
             </h1>
- 
           </div>
-               <div className="w-full flex lg:justify-center p-2">
-              <img src={svg1} alt="" className="  lg:w-[28rem] rotate-6" />
-            </div>
-
-          
+          </ImageTrail>
+          <div className="w-full flex lg:justify-center p-2">
+            <img src={svg1} alt="" className="  lg:w-[28rem] rotate-6" />
+          </div>
         </div>
+
+      </section>
+      <section>
+        <RecentProjects/>
       </section>
     </div>
   );

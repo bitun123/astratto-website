@@ -1,3 +1,6 @@
+* {
+  cursor: none;
+}
 
 .custom-pagination {
   position: relative;
@@ -12,5 +15,7 @@
   border-radius: 999px;
   transform-origin: left;
 }
+
+
 
 @import "tailwindcss";
