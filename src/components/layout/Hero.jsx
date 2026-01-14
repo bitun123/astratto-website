@@ -31,7 +31,7 @@ function Hero() {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // 1. Initial Load Animation (Main Hero Text)
+ 
       const tl = gsap.timeline();
       tl.from(".hero-title span", {
         y: 80,
@@ -48,7 +48,6 @@ function Hero() {
         ease: "back.out(1.7)"
       }, "-=0.8");
 
-      // 2. Service Section Reveal (Border & Content)
       gsap.from(".service-section", {
         scrollTrigger: {
           trigger: ".service-section",
@@ -61,7 +60,7 @@ function Hero() {
         ease: "power3.out",
       });
 
-      // 3. Staggered reveal for the "About Astratto" text lines
+     
       gsap.from(".about-reveal span, .about-reveal img", {
         scrollTrigger: {
           trigger: ".about-reveal",
@@ -74,7 +73,7 @@ function Hero() {
         ease: "power2.out"
       });
 
-      // 4. Parallax effect for the colorful SVG waves
+
       gsap.to(".wave-parallax", {
         scrollTrigger: {
           trigger: ".wave-parallax",
@@ -86,7 +85,7 @@ function Hero() {
 
     }, mainContainer);
 
-    return () => ctx.revert(); // Cleanup GSAP
+    return () => ctx.revert(); 
   }, []);
 
   return (
@@ -153,7 +152,7 @@ function Hero() {
        <motion.div 
   className="w-[9rem] flex justify-end md:w-[15rem] lg:w-[25rem] lg:justify-start"
   animate={{ 
-    // We move it slightly on the Y axis and adjust the rotation
+  
     y: [0, -12, 0],
     rotate: [2, -1, 2] 
   }}
