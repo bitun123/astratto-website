@@ -10,7 +10,7 @@
 - **Username:** bitun123  
 - **Role:** Frontend Developer  
 - **Location:** Milan, Italy  
-- **Email:** your-email@example.com  
+- **Email:** styajitdasmahapatra2002@gmail.com 
 - **GitHub:** https://github.com/bitun123  
 - **Portfolio:** https://your-portfolio-link.com  
 
