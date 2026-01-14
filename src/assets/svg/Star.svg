@@ -1,0 +1,91 @@
+<svg
+  width="60"
+  height="60"
+  viewBox="0 0 100 100"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Animation group -->
+  <g>
+    <!-- Main star -->
+    <path
+      d="M50 15
+         L58 40
+         L85 50
+         L58 60
+         L50 85
+         L42 60
+         L15 50
+         L42 40 Z"
+      fill="#FFD84D"
+    />
+
+    <!-- Small sparkle top right -->
+    <path
+      d="M78 10
+         L82 18
+         L90 22
+         L82 26
+         L78 34
+         L74 26
+         L66 22
+         L74 18 Z"
+      fill="#FFD84D"
+    />
+
+    <!-- Small sparkle left -->
+    <path
+      d="M18 28
+         L21 34
+         L27 37
+         L21 40
+         L18 46
+         L15 40
+         L9 37
+         L15 34 Z"
+      fill="#FFD84D"
+    />
+
+    <!-- Pulse -->
+    <animateTransform
+      attributeName="transform"
+      type="scale"
+      from="1"
+      to="1.15"
+      dur="1.6s"
+      repeatCount="indefinite"
+      direction="alternate"
+      additive="sum"
+    />
+
+    <!-- Rotate slightly -->
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 50 50"
+      to="8 50 50"
+      dur="1.6s"
+      repeatCount="indefinite"
+      direction="alternate"
+      additive="sum"
+    />
+  </g>
+
+  <!-- Twinkle effect -->
+  <circle cx="72" cy="20" r="2" fill="#FFF3B0">
+    <animate
+      attributeName="opacity"
+      values="0;1;0"
+      dur="1.2s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <circle cx="25" cy="18" r="1.5" fill="#FFF3B0">
+    <animate
+      attributeName="opacity"
+      values="0;1;0"
+      dur="1.5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+</svg>

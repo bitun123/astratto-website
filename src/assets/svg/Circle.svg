@@ -1,0 +1,50 @@
+<svg
+  width="160"
+  height="160"
+  viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Outer circle -->
+  <circle cx="100" cy="100" r="90" fill="#7C3AED" />
+
+  <!-- Path for circular text -->
+  <defs>
+    <path
+      id="textPath"
+      d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"
+    />
+  </defs>
+
+  <!-- Rotating text group -->
+  <g>
+    <text
+      fill="#E9D5FF"
+      font-size="12"
+      font-weight="600"
+      letter-spacing="2"
+    >
+      <textPath href="#textPath" startOffset="0%">
+        ★ LET'S GET STARTED • LET'S GET STARTED • LET'S GET STARTED •
+      </textPath>
+    </text>
+
+    <!-- Rotation animation -->
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      from="0 100 100"
+      to="360 100 100"
+      dur="10s"
+      repeatCount="indefinite"
+    />
+  </g>
+
+  <!-- Center circle -->
+  <circle cx="100" cy="100" r="42" fill="#FACC15" />
+
+  <!-- Star icon -->
+  <polygon
+    points="100,70 108,92 132,92 112,106 120,130 100,115 80,130 88,106 68,92 92,92"
+    fill="#7C3AED"
+  />
+</svg>
