@@ -11,5 +11,5 @@
 - **Role:** Frontend Developer  
 - **Email:** styajitdasmahapatra2002@gmail.com 
 - **GitHub:** https://github.com/bitun123  
-- **Portfolio:** https://your-portfolio-link.com  ....
+- **Portfolio:** https://your-portfolio-link.com  .
 
